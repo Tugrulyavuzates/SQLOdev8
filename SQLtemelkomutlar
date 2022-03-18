@@ -1,0 +1,10 @@
+CREATE TABLE employee(
+   id INT PRIMARY KEY,
+   first_name VARCHAR(50) NOT NULL,
+   last_name VARCHAR(50) NOT NULL,
+   email VARCHAR(100),
+   birthday DATE
+
+);
+
+insert into employee (id, first_name, last_name, email, birthday) values (1, 'Garnette', 'Franchi', 'gfranchi0@uiuc.edu', '17/11/1998')
