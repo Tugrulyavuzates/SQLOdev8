@@ -1,3 +1,4 @@
+````SQL
 CREATE TABLE employee(
    id INT PRIMARY KEY,
    first_name VARCHAR(50) NOT NULL,
@@ -6,36 +7,47 @@ CREATE TABLE employee(
    birthday DATE
 
 );
-
+````
+````SQL
 insert into employee (id, first_name, last_name, email, birthday) values (1, 'Garnette', 'Franchi', 'gfranchi0@uiuc.edu', '17/11/1998')
-//
+````
+````SQL
 UPDATE employee
 SET id = 66
 WHERE id = 1;
-//
+````
+````SQL
 UPDATE employee
 SET first_name = 'Creed', last_name = 'Bratton'
 WHERE id = 7
 RETURNING *;
-//
+````
+````SQL
 UPDATE employee
 SET email = 'youknowit@gmail.com'
 WHERE id = 7
 RETURNING *;
-//
+````
+````SQL
 UPDATE employee
 SET email = 'youknowit@gmail.com'
 WHERE first_name = 'Creed'
 RETURNING *;
-//
+````
+````SQL
 DELETE FROM employee
 WHERE id >45
 RETURNING *;
-//
+````
+````SQL
 DELETE FROM employee
 WHERE first_name ='S%'
 RETURNING *;
-//
+````
+````SQL
 DELETE FROM employee
 WHERE email = NULL
 RETURNING *;
+````
+
+ ```
